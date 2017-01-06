@@ -1,16 +1,18 @@
+<!DOCTYPE html>
 <HTML>
 <HEAD>
 <TITLE>My Home Temperature</TITLE>
 </HEAD>
 <BODY BGCOLOR="FFFFFF">
-<HR>
-	
+<HR>	
 <A HREF="index.html">Main Page</A>	
-<H1>Details of Central House Temperature versus Outside Temperature</H1>
-<H2>This is a Medium Header</H2>
-<P> This is a new paragraph!
-<P> <B>This is a new paragraph!</B>
-<BR> <B><I>This is a new sentence without a paragraph break, in bold italics.</I></B>
-<HR>
+
+<H1>Details on the setup</H1>
+<ul>
+	<li>A RaspBerryPi is used to acquire the inside and outside temperature using two 1 wire Dallas sensors.</li>
+	<li>The RaspBerryPi periodicly saves the data in a CVS format on an nfs mount point on Linux server.</li>
+	<li>This server runs Apache2. It uses  gnuplot to generate the graphic and display it on these HTML pages.</li>
+
+</ul>
 </BODY>
 </HTML>
